@@ -1,0 +1,24 @@
+{
+  "name": "reactapollographql_learn",
+  "version": "1.0.0",
+  "description": "Learning Apollo GraphQL with React",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asolace/ReactApolloGraphQL_Learn.git"
+  },
+  "author": "Jack He",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asolace/ReactApolloGraphQL_Learn/issues"
+  },
+  "homepage": "https://github.com/asolace/ReactApolloGraphQL_Learn#readme",
+  "dependencies": {
+    "apollo-server": "^2.18.1",
+    "graphql": "^15.3.0"
+  }
+}
