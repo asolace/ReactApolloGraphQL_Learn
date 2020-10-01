@@ -1,7 +1,21 @@
 const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
+const resolvers = require('./resolvers');
+const { createStore } = require('./utils');
 
-const server = new ApolloServer({ typeDefs });
+const QuakeAPI = require('./datasources/QuakeAPI');
+const UserAPI = require('./datasources/UserAPI');
+
+const store = createStore();
+
+const server = new ApolloServer({ 
+  typeDefs,
+  resolvers,
+  dataSources: () => ({
+    quakeAPI: new QuakeAPI(),
+    userAPI: new UserAPI({ store })
+  })
+ });
 
 server.listen().then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`);

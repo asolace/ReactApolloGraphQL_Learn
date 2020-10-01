@@ -3,4 +3,4 @@ Learning repo for [Apollo](https://www.apollographql.com/docs/) [GraphQL](https:
 
 Tutorial from [willjw3](https://www.youtube.com/watch?v=h-ZCVUAzR-0&list=PLASldBPN_pkDUuOzyPotAkKmvwqyDoA0g).
 
-[GraphQL Playground](http://localhost:4000/graphql) at port 4000
+GraphQL Playground at port [4000](http://localhost:4000/graphql).
